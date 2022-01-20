@@ -1,7 +1,0 @@
-Running: xsim.dir/BlockChecker_tb_behav/xsimk.exe -simmode gui -wdb BlockChecker_tb_behav.wdb -simrunnum 0 -socket 9122
-Design successfully loaded
-Design Loading Memory Usage: 6348 KB (Peak: 6348 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 7000 KB (Peak: 7000 KB)
-Simulation CPU Usage: 15 ms

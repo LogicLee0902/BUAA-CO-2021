@@ -1,1 +1,0 @@
--wto "7ab8c42606ba4eeeb85df669c600b281" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "BlockChecker_tb_behav" "xil_defaultlib.BlockChecker_tb" "xil_defaultlib.glbl" -log "elaborate.log" 
