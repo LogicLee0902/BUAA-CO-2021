@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov 20 16:52:36 2021
+# Process ID: 26720
+# Current directory: D:/Archive/ISE/Monocycle_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3264 D:\Archive\ISE\Monocycle_CPU\Monocycle_CPU.xpr
+# Log file: D:/Archive/ISE/Monocycle_CPU/vivado.log
+# Journal file: D:/Archive/ISE/Monocycle_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xillinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 810.625 ; gain = 179.320
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 20 16:53:41 2021...

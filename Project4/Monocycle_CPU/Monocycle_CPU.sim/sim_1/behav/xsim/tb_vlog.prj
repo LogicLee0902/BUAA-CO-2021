@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Monocycle_CPU.srcs/sources_1/new/ALU.v" \
+"../../../../Monocycle_CPU.srcs/sources_1/new/Controller.v" \
+"../../../../Monocycle_CPU.srcs/sources_1/new/DM.v" \
+"../../../../Monocycle_CPU.srcs/sources_1/new/EXT.v" \
+"../../../../Monocycle_CPU.srcs/sources_1/new/GRF.v" \
+"../../../../Monocycle_CPU.srcs/sources_1/new/IM.v" \
+"../../../../Monocycle_CPU.srcs/sources_1/new/MUX.v" \
+"../../../../Monocycle_CPU.srcs/sources_1/new/NPC.v" \
+"../../../../Monocycle_CPU.srcs/sources_1/new/PC.v" \
+"../../../../Monocycle_CPU.srcs/sources_1/new/dasm.v" \
+"../../../../Monocycle_CPU.srcs/sources_1/new/datapath.v" \
+"../../../../Monocycle_CPU.srcs/sources_1/new/mips.v" \
+"../../../../Monocycle_CPU.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

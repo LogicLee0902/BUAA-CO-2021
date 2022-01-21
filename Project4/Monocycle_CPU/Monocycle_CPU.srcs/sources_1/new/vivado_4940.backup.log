@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov 20 16:54:49 2021
+# Process ID: 4940
+# Current directory: D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new
+# Command line: vivado.exe -mode tcl
+# Log file: D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/vivado.log
+# Journal file: D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new\vivado.jou
+#-----------------------------------------------------------
+Vivado% run 1000ns
+ERROR: [Common 17-165] Too many positional options when parsing '1000ns', please type 'run_ml_model -help' for usage info.
+
+Vivado% xsim work.tb
+WARNING: [Common 17-259] Unknown Tcl command 'xsim work.tb' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+simulation_1
+Vivado% run 1000ns
+@00003000: $16 <= 00000003
+@00003004: $17 <= 00000001
+@00003008: $18 <= 00000004
+@0000300c: $16 <= 00000002
+@00003010: $17 <= 00000002
+@00003014: $18 <= 00000008
+@00003018: *00000008 <= 00000002
+@0000301c: $ 8 <= 00000002
+@0000300c: $16 <= 00000000
+@00003010: $17 <= 00000004
+@00003014: $18 <= 00000010
+@00003018: *00000010 <= 00000004
+@0000301c: $ 8 <= 00000004
+@0000300c: $16 <= fffffffc
+@00003010: $17 <= 00000008
+@00003014: $18 <= 00000020
+@00003018: *00000020 <= 00000008
+@0000301c: $ 8 <= 00000008
+Vivado% xelab tb
+WARNING: [Common 17-259] Unknown Tcl command 'xelab tb' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+child process exited abnormally
+Vivado% xvlog DM.v IM.v Controller.v datapath.v ALU.v mips.v tb.v GRF.v dasm.v MUX.v PC.v EXT.v npc.v
+WARNING: [Common 17-259] Unknown Tcl command 'xvlog DM.v IM.v Controller.v datapath.v ALU.v mips.v tb.v GRF.v dasm.v MUX.v PC.v EXT.v npc.v' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Vivado% xsim tb
+ERROR: [Simtcl 6-30] Unable to locate simulation image at 'xsim.dir/tb/xsimk.exe'
+
+Vivado% xelab tb
+WARNING: [Common 17-259] Unknown Tcl command 'xelab tb' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+child process exited abnormally
+Vivado% xelab mo
+WARNING: [Common 17-259] Unknown Tcl command 'xelab mo' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+child process exited abnormally
+Vivado% xelab tb -s top
+WARNING: [Common 17-259] Unknown Tcl command 'xelab tb -s top' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Vivado% xsim top -run 1000ns
+ERROR: [Common 17-165] Too many positional options when parsing '1000ns', please type 'xsim -help' for usage info.
+
+Vivado% xsim top run 1000ns
+ERROR: [Common 17-165] Too many positional options when parsing '1000ns', please type 'xsim -help' for usage info.
+
+Vivado% xsim top
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+simulation_3
+Vivado% run 1000ns
+@00003000: $16 <= 00000003
+@00003004: $17 <= 00000001
+@00003008: $18 <= 00000004
+@0000300c: $16 <= 00000002
+@00003010: $17 <= 00000002
+@00003014: $18 <= 00000008
+@00003018: *00000008 <= 00000002
+@0000301c: $ 8 <= 00000002
+@0000300c: $16 <= 00000000
+@00003010: $17 <= 00000004
+@00003014: $18 <= 00000010
+@00003018: *00000010 <= 00000004
+@0000301c: $ 8 <= 00000004
+@0000300c: $16 <= fffffffc
+@00003010: $17 <= 00000008
+@00003014: $18 <= 00000020
+@00003018: *00000020 <= 00000008
+@0000301c: $ 8 <= 00000008
+Vivado% 

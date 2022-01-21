@@ -1,0 +1,336 @@
+{
+    "forwarding": [
+        {
+            "valid": true,
+            "forward": {
+                "reg": 11,
+                "old": {
+                    "stage": "d",
+                    "value": "0x00000000"
+                },
+                "new": {
+                    "stage": "e",
+                    "value": "0x49bf0000"
+                }
+            },
+            "view": {
+                "d": {
+                    "pc": "0x00003008",
+                    "instr": "addu $13, $9, $11"
+                },
+                "e": {
+                    "pc": "0x00003004",
+                    "instr": "lui $11, 0x49bf"
+                },
+                "m": {
+                    "pc": "0x00003000",
+                    "instr": "ori $10, $0, 0x3000"
+                },
+                "w": {
+                    "pc": "0x00000000",
+                    "instr": "nop"
+                }
+            }
+        },
+        {
+            "valid": true,
+            "forward": {
+                "reg": 13,
+                "old": {
+                    "stage": "e",
+                    "value": "0x00000000"
+                },
+                "new": {
+                    "stage": "m",
+                    "value": "0x49bf0000"
+                }
+            },
+            "view": {
+                "d": {
+                    "pc": "0x00003010",
+                    "instr": "ori $9, $0, 0xabfe"
+                },
+                "e": {
+                    "pc": "0x0000300c",
+                    "instr": "sw $13, 0($0)"
+                },
+                "m": {
+                    "pc": "0x00003008",
+                    "instr": "addu $13, $9, $11"
+                },
+                "w": {
+                    "pc": "0x00003004",
+                    "instr": "lui $11, 0x49bf"
+                }
+            }
+        },
+        {
+            "valid": true,
+            "forward": {
+                "reg": 9,
+                "old": {
+                    "stage": "d",
+                    "value": "0x00000000"
+                },
+                "new": {
+                    "stage": "m",
+                    "value": "0x0000abfe"
+                }
+            },
+            "view": {
+                "d": {
+                    "pc": "0x00003018",
+                    "instr": "addu $9, $9, $12"
+                },
+                "e": {
+                    "pc": "0x00003014",
+                    "instr": "lw $12, 0($0)"
+                },
+                "m": {
+                    "pc": "0x00003010",
+                    "instr": "ori $9, $0, 0xabfe"
+                },
+                "w": {
+                    "pc": "0x0000300c",
+                    "instr": "sw $13, 0($0)"
+                }
+            }
+        },
+        {
+            "valid": true,
+            "forward": {
+                "reg": 9,
+                "old": {
+                    "stage": "d",
+                    "value": "0x00000000"
+                },
+                "new": {
+                    "stage": "w",
+                    "value": "0x0000abfe"
+                }
+            },
+            "view": {
+                "d": {
+                    "pc": "0x00003018",
+                    "instr": "addu $9, $9, $12"
+                },
+                "e": {
+                    "pc": "0x00000000",
+                    "instr": "nop"
+                },
+                "m": {
+                    "pc": "0x00003014",
+                    "instr": "lw $12, 0($0)"
+                },
+                "w": {
+                    "pc": "0x00003010",
+                    "instr": "ori $9, $0, 0xabfe"
+                }
+            }
+        },
+        {
+            "valid": true,
+            "forward": {
+                "reg": 12,
+                "old": {
+                    "stage": "e",
+                    "value": "0x00000000"
+                },
+                "new": {
+                    "stage": "w",
+                    "value": "0x49bf0000"
+                }
+            },
+            "view": {
+                "d": {
+                    "pc": "0x0000301c",
+                    "instr": "ori $8, $0, 0x0008"
+                },
+                "e": {
+                    "pc": "0x00003018",
+                    "instr": "addu $9, $9, $12"
+                },
+                "m": {
+                    "pc": "0x00000000",
+                    "instr": "nop"
+                },
+                "w": {
+                    "pc": "0x00003014",
+                    "instr": "lw $12, 0($0)"
+                }
+            }
+        },
+        {
+            "valid": true,
+            "forward": {
+                "reg": 8,
+                "old": {
+                    "stage": "e",
+                    "value": "0x00000000"
+                },
+                "new": {
+                    "stage": "m",
+                    "value": "0x00000008"
+                }
+            },
+            "view": {
+                "d": {
+                    "pc": "0x00003024",
+                    "instr": "lw $8, 4($8)"
+                },
+                "e": {
+                    "pc": "0x00003020",
+                    "instr": "sw $8, 4($8)"
+                },
+                "m": {
+                    "pc": "0x0000301c",
+                    "instr": "ori $8, $0, 0x0008"
+                },
+                "w": {
+                    "pc": "0x00003018",
+                    "instr": "addu $9, $9, $12"
+                }
+            }
+        },
+        {
+            "valid": true,
+            "forward": {
+                "reg": 8,
+                "old": {
+                    "stage": "e",
+                    "value": "0x00000000"
+                },
+                "new": {
+                    "stage": "m",
+                    "value": "0x00000008"
+                }
+            },
+            "view": {
+                "d": {
+                    "pc": "0x00003024",
+                    "instr": "lw $8, 4($8)"
+                },
+                "e": {
+                    "pc": "0x00003020",
+                    "instr": "sw $8, 4($8)"
+                },
+                "m": {
+                    "pc": "0x0000301c",
+                    "instr": "ori $8, $0, 0x0008"
+                },
+                "w": {
+                    "pc": "0x00003018",
+                    "instr": "addu $9, $9, $12"
+                }
+            }
+        },
+        {
+            "valid": true,
+            "forward": {
+                "reg": 8,
+                "old": {
+                    "stage": "d",
+                    "value": "0x00000000"
+                },
+                "new": {
+                    "stage": "m",
+                    "value": "0x00000008"
+                }
+            },
+            "view": {
+                "d": {
+                    "pc": "0x00003024",
+                    "instr": "lw $8, 4($8)"
+                },
+                "e": {
+                    "pc": "0x00003020",
+                    "instr": "sw $8, 4($8)"
+                },
+                "m": {
+                    "pc": "0x0000301c",
+                    "instr": "ori $8, $0, 0x0008"
+                },
+                "w": {
+                    "pc": "0x00003018",
+                    "instr": "addu $9, $9, $12"
+                }
+            }
+        },
+        {
+            "valid": false,
+            "forward": {
+                "reg": 8,
+                "old": {
+                    "stage": "e",
+                    "value": "0x00000008"
+                },
+                "new": {
+                    "stage": "w",
+                    "value": "0x00000008"
+                }
+            },
+            "view": {
+                "d": {
+                    "pc": "0x0000302c",
+                    "instr": "sll $0, $0, 0"
+                },
+                "e": {
+                    "pc": "0x00003028",
+                    "instr": "sw $9, 8($8)"
+                },
+                "m": {
+                    "pc": "0x00000000",
+                    "instr": "nop"
+                },
+                "w": {
+                    "pc": "0x00003024",
+                    "instr": "lw $8, 4($8)"
+                }
+            }
+        }
+    ],
+    "stalling": [
+        {
+            "cause": "e",
+            "view": {
+                "d": {
+                    "pc": "0x00003018",
+                    "instr": "addu $9, $9, $12"
+                },
+                "e": {
+                    "pc": "0x00003014",
+                    "instr": "lw $12, 0($0)"
+                },
+                "m": {
+                    "pc": "0x00003010",
+                    "instr": "ori $9, $0, 0xabfe"
+                },
+                "w": {
+                    "pc": "0x0000300c",
+                    "instr": "sw $13, 0($0)"
+                }
+            }
+        },
+        {
+            "cause": "e",
+            "view": {
+                "d": {
+                    "pc": "0x00003028",
+                    "instr": "sw $9, 8($8)"
+                },
+                "e": {
+                    "pc": "0x00003024",
+                    "instr": "lw $8, 4($8)"
+                },
+                "m": {
+                    "pc": "0x00003020",
+                    "instr": "sw $8, 4($8)"
+                },
+                "w": {
+                    "pc": "0x0000301c",
+                    "instr": "ori $8, $0, 0x0008"
+                }
+            }
+        }
+    ]
+}

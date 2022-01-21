@@ -1,0 +1,38 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/A-T Controller.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/ADD4.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/ALU.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/CMP.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/EXME.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/EXT.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/Forward Controller.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/GRF.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/IDEX.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/IFID.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/LOAD.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/MEWB.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/MUX.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/MulDiv.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/NPC.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/P7_standard_timer_2019.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/PC.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/SAVE.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/StageD.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/StageE.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/StageF.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/StageM.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/StageW.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/Stall.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/decoder.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/mips.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/mips_Bridge.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/mips_CP0.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/mips_CPU.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/tb_interrupt_demo.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

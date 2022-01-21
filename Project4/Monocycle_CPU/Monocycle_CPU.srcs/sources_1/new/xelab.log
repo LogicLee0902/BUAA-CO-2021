@@ -1,0 +1,25 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xillinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe tb -s top 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.NPC
+Compiling module work.PC
+Compiling module work.IM
+Compiling module work.GRF
+Compiling module work.MUX_4_32
+Compiling module work.MUX_4_5
+Compiling module work.MUX_2_32
+Compiling module work.EXT
+Compiling module work.ALU
+Compiling module work.DM
+Compiling module work.DASM
+Compiling module work.datapath
+Compiling module work.Controller
+Compiling module work.mips
+Compiling module work.tb
+Built simulation snapshot top

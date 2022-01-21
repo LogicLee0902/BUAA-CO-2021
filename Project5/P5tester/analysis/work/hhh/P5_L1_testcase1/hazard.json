@@ -1,0 +1,71 @@
+{
+    "forwarding": [
+        {
+            "valid": true,
+            "forward": {
+                "reg": 31,
+                "old": {
+                    "stage": "d",
+                    "value": "0x00000000"
+                },
+                "new": {
+                    "stage": "w",
+                    "value": "0x00003fdc"
+                }
+            },
+            "view": {
+                "d": {
+                    "pc": "0x00003860",
+                    "instr": "jr $31"
+                },
+                "e": {
+                    "pc": "0x0000385c",
+                    "instr": "lui $8, 0x0001"
+                },
+                "m": {
+                    "pc": "0x00003fd8",
+                    "instr": "sll $0, $0, 0"
+                },
+                "w": {
+                    "pc": "0x00003fd4",
+                    "instr": "jal 0x#000385c"
+                }
+            }
+        },
+        {
+            "valid": true,
+            "forward": {
+                "reg": 8,
+                "old": {
+                    "stage": "d",
+                    "value": "0x00000000"
+                },
+                "new": {
+                    "stage": "w",
+                    "value": "0x00010000"
+                }
+            },
+            "view": {
+                "d": {
+                    "pc": "0x00003fdc",
+                    "instr": "addu $9, $8, $9"
+                },
+                "e": {
+                    "pc": "0x00003864",
+                    "instr": "sll $0, $0, 0"
+                },
+                "m": {
+                    "pc": "0x00003860",
+                    "instr": "jr $31"
+                },
+                "w": {
+                    "pc": "0x0000385c",
+                    "instr": "lui $8, 0x0001"
+                }
+            }
+        }
+    ],
+    "stalling": [
+
+    ]
+}

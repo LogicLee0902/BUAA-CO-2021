@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec  8 16:40:19 2021
+# Process ID: 22688
+# Current directory: D:/Archive/P5tester
+# Command line: vivado.exe -mode batch -source start.tcl
+# Log file: D:/Archive/P5tester/vivado.log
+# Journal file: D:/Archive/P5tester\vivado.jou
+#-----------------------------------------------------------
+source start.tcl
+# open_project D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.xpr
+Scanning sources...
+Finished scanning sources
+# update_compile_order -fileset sources_1
+# launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.sim/sim_1/behav/xsim'
+"xelab -wto 69eaea31912f48ec9422b319bd03e1d6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xillinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 69eaea31912f48ec9422b319bd03e1d6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb.tcl
+## current_wave_config
+                  11@00003000: $ 8 <= 0000000c
+                  13@00003004: $ 9 <= 0000000f
+                  13@00003008: *0000000c <= 0000000f
+                  17@0000300c: $10 <= 0000000f
+                  27@0000301c: $ 8 <= 00000010
+                  29@00003020: $ 9 <= 00000013
+                  29@00003024: *00000010 <= 00000013
+                  33@00003028: $10 <= 00000013
+                  43@00003038: $ 8 <= 00000014
+                  45@0000303c: $ 9 <= 00000015
+                  45@00003040: *00000014 <= 00000015
+                  49@00003044: $10 <= 00000015
+                  59@00003058: $ 8 <= 00000018
+                  61@0000305c: $ 9 <= 00000016
+                  61@00003060: *00000018 <= 00000016
+                  65@00003064: $10 <= 00000016
+                  75@00003078: $ 8 <= 0000001c
+                  77@0000307c: $ 9 <= 00000017
+                  77@00003080: *0000001c <= 00000017
+                  81@00003084: $10 <= 00000017
+                  91@0000309c: $ 8 <= 0000001c
+                  93@000030a0: $ 9 <= 00000017
+                  93@000030a4: *0000001c <= 00000017
+                  97@000030a8: $10 <= 00000017
+                 107@000030c0: $ 8 <= 0000001c
+                 109@000030c4: $ 9 <= 00000017
+                 109@000030c8: *0000001c <= 00000017
+                 113@000030cc: $10 <= 00000017
+                 123@000030e4: $ 8 <= 00000002
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 388.563 ; gain = 10.008
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  8 16:40:34 2021...

@@ -1,0 +1,607 @@
+{
+    "forward_valid_ratio": 0.8768625318912675,
+    "forward_count": 78,
+    "stall_count": 15,
+    "forward_coverage": 0.7289719626168224,
+    "stall_coverage": 1.0,
+    "grade": {
+        "forward": {
+            "average": 90.57471264367815,
+            "warning": [],
+            "details": {
+                "cal_rr <~~ cal_rr": 86.66666666666666,
+                "cal_rr <~~ cal_ri": 100.0,
+                "cal_rr <~~ load": 90.0,
+                "cal_rr <~~ lui": 86.66666666666666,
+                "cal_rr <~~ jal": 93.33333333333334,
+                "cal_ri <~~ cal_rr": 73.33333333333333,
+                "cal_ri <~~ cal_ri": 86.66666666666666,
+                "cal_ri <~~ load": 80.0,
+                "cal_ri <~~ lui": 73.33333333333333,
+                "cal_ri <~~ jal": 86.66666666666666,
+                "br_r2 <~~ cal_rr": 90.0,
+                "br_r2 <~~ cal_ri": 100.0,
+                "br_r2 <~~ load": 100.0,
+                "br_r2 <~~ lui": 100.0,
+                "br_r2 <~~ jal": 100.0,
+                "load <~~ cal_rr": 86.66666666666666,
+                "load <~~ cal_ri": 100.0,
+                "load <~~ load": 100.0,
+                "load <~~ lui": 73.33333333333333,
+                "load <~~ jal": 73.33333333333333,
+                "store <~~ cal_rr": 93.33333333333334,
+                "store <~~ cal_ri": 100.0,
+                "store <~~ load": 100.0,
+                "store <~~ lui": 73.33333333333333,
+                "store <~~ jal": 100.0,
+                "jr <~~ cal_rr": 80.0,
+                "jr <~~ cal_ri": 100.0,
+                "jr <~~ load": 100.0,
+                "jr <~~ jal": 100.0
+            }
+        },
+        "stall": {
+            "average": 100.0,
+            "warning": [],
+            "details": {
+                "cal_rr <~~ load": 100.0,
+                "cal_ri <~~ load": 100.0,
+                "br_r2 <~~ cal_rr": 100.0,
+                "br_r2 <~~ cal_ri": 100.0,
+                "br_r2 <~~ load": 100.0,
+                "load <~~ load": 100.0,
+                "store <~~ load": 100.0,
+                "jr <~~ cal_rr": 100.0,
+                "jr <~~ cal_ri": 100.0,
+                "jr <~~ load": 100.0
+            }
+        }
+    },
+    "forward": [
+        {
+            "src_instr": "addu",
+            "dst_instr": "addu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "addu",
+            "dst_instr": "addu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "addu",
+            "dst_instr": "beq",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "addu",
+            "dst_instr": "beq",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "addu",
+            "dst_instr": "jr",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "addu",
+            "dst_instr": "lw",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "addu",
+            "dst_instr": "subu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "addu",
+            "dst_instr": "subu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "addu",
+            "dst_instr": "subu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "addu",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "addu",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "addu",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "addu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "addu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "beq",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "beq",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "jr",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "jr",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "lw",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "ori",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "ori",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "subu",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "subu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "sw",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "sw",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "addu",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "addu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "addu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "beq",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "beq",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "beq",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "lw",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "ori",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "subu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "sw",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "addu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "addu",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "beq",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "jr",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "lw",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "lw",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "ori",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "subu",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "sw",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "sw",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "sw",
+            "src_stage": "W",
+            "dst_stage": "M"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "addu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "addu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "addu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "beq",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "beq",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "jr",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "jr",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "lw",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "lw",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "lw",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "ori",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "ori",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "subu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "subu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "subu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "sw",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "subu",
+            "dst_instr": "addu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "subu",
+            "dst_instr": "addu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "subu",
+            "dst_instr": "beq",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "subu",
+            "dst_instr": "jr",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "subu",
+            "dst_instr": "lw",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "subu",
+            "dst_instr": "lw",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "subu",
+            "dst_instr": "lw",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "subu",
+            "dst_instr": "ori",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "subu",
+            "dst_instr": "ori",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "subu",
+            "dst_instr": "subu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "subu",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "subu",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "subu",
+            "dst_instr": "sw",
+            "src_stage": "W",
+            "dst_stage": "D"
+        }
+    ],
+    "stall": [
+        {
+            "d_instr": "beq",
+            "cause": "addu",
+            "interval": 0
+        },
+        {
+            "d_instr": "jr",
+            "cause": "addu",
+            "interval": 0
+        },
+        {
+            "d_instr": "addu",
+            "cause": "lw",
+            "interval": 0
+        },
+        {
+            "d_instr": "beq",
+            "cause": "lw",
+            "interval": 0
+        },
+        {
+            "d_instr": "beq",
+            "cause": "lw",
+            "interval": 1
+        },
+        {
+            "d_instr": "jr",
+            "cause": "lw",
+            "interval": 0
+        },
+        {
+            "d_instr": "jr",
+            "cause": "lw",
+            "interval": 1
+        },
+        {
+            "d_instr": "lw",
+            "cause": "lw",
+            "interval": 0
+        },
+        {
+            "d_instr": "ori",
+            "cause": "lw",
+            "interval": 0
+        },
+        {
+            "d_instr": "subu",
+            "cause": "lw",
+            "interval": 0
+        },
+        {
+            "d_instr": "sw",
+            "cause": "lw",
+            "interval": 0
+        },
+        {
+            "d_instr": "beq",
+            "cause": "ori",
+            "interval": 0
+        },
+        {
+            "d_instr": "jr",
+            "cause": "ori",
+            "interval": 0
+        },
+        {
+            "d_instr": "beq",
+            "cause": "subu",
+            "interval": 0
+        },
+        {
+            "d_instr": "jr",
+            "cause": "subu",
+            "interval": 0
+        }
+    ]
+}

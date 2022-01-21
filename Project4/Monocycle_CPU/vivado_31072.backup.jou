@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov 20 16:27:10 2021
+# Process ID: 31072
+# Current directory: D:/Archive/ISE/Monocycle_CPU
+# Command line: vivado.exe -mode tcl
+# Log file: D:/Archive/ISE/Monocycle_CPU/vivado.log
+# Journal file: D:/Archive/ISE/Monocycle_CPU\vivado.jou
+#-----------------------------------------------------------
+xvlog -help
+exec -help
+exec xvlog -help
+xvlog -prj Monocycle_CPU.xpr
+cd Monocycle_CPU.srcs
+cd sources_1
+cd new
+xvlog DM.v IM.v Controller.v datapath.v ALU.v mips.v tb.v GRF.v dasm.v MUX.v PC.v EXT,v
+DM.v IM.v Controller.v datapath.v ALU.v mips.v tb.v GRF.v dasm.v MUX.v PC.v EXT.v
+xvlog DM.v IM.v Controller.v datapath.v ALU.v mips.v tb.v GRF.v dasm.v MUX.v PC.v EXT.v
+xelab -help
+xelab tb

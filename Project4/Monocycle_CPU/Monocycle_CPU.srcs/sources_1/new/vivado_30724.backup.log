@@ -1,0 +1,311 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov 20 16:40:48 2021
+# Process ID: 30724
+# Current directory: D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new
+# Command line: vivado.exe -mode tcl
+# Log file: D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/vivado.log
+# Journal file: D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new\vivado.jou
+#-----------------------------------------------------------
+Vivado% xelab DM IM Controller datapath ALU mips tb GRF dasm MUX PC EXT
+WARNING: [Common 17-259] Unknown Tcl command 'xelab DM IM Controller datapath ALU mips tb GRF dasm MUX PC EXT' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+child process exited abnormally
+Vivado% xelab DM IM Controller datapath ALU mips tb GRF dasm MUX PC EXT NPC
+WARNING: [Common 17-259] Unknown Tcl command 'xelab DM IM Controller datapath ALU mips tb GRF dasm MUX PC EXT NPC' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+child process exited abnormally
+Vivado% xelab DM IM Controller datapath ALU mips tb GRF MUX PC EXT NPC
+WARNING: [Common 17-259] Unknown Tcl command 'xelab DM IM Controller datapath ALU mips tb GRF MUX PC EXT NPC' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+child process exited abnormally
+Vivado% XELAB TB
+WARNING: [Common 17-259] Unknown Tcl command 'XELAB TB' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+child process exited abnormally
+Vivado% xelab tb
+WARNING: [Common 17-259] Unknown Tcl command 'xelab tb' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+child process exited abnormally
+Vivado% xvlog DM.v IM.v Controller.v datapath.v ALU.v mips.v tb.v GRF.v dasm.v MUX.v PC.v EXT.v npc.v
+WARNING: [Common 17-259] Unknown Tcl command 'xvlog DM.v IM.v Controller.v datapath.v ALU.v mips.v tb.v GRF.v dasm.v MUX.v PC.v EXT.v npc.v' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Vivado% xelab tb
+WARNING: [Common 17-259] Unknown Tcl command 'xelab tb' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Vivado% xsim tb -R
+WARNING: [Common 17-259] Unknown Tcl command 'xsim tb -R' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+ERROR: [Simtcl 6-30] Unable to locate simulation image at 'xsim.dir/tb/xsimk.exe'
+
+Vivado% xsim -help
+xsim
+
+Description: 
+Load a simulation snapshot for simulation and return a simulation object
+
+Syntax: 
+xsim  [-view <args>] [-autoloadwcfg] [-runall] [-R] [-maxdeltaid <arg>]
+      [-nolog] [-maxlogsize <arg>] [-onfinish <arg>] [-onerror <arg>]
+      [-tclbatch <args>] [-t <args>] [-testplusarg <args>] [-vcdfile <arg>]
+      [-vcdunit <arg>] [-wdb <arg>] [-tp] [-tl] [-nosignalhandlers]
+      [-ieeewarnings] [-stats] [-scNoLogFile] [-sv_seed <arg>]
+      [-protoinst <args>] [-cov_db_dir <arg>] [-cov_db_name <arg>]
+      [-ignore_assertions] [-ignore_coverage] [-downgrade_error2info]
+      [-downgrade_error2warning] [-downgrade_fatal2info]
+      [-downgrade_fatal2warning] [-ignore_feature <args>]
+      [-downgrade_severity <args>] [-quiet] [-verbose] <snapshot>
+
+Returns: 
+Current simulation object
+
+Usage: 
+  Name                        Description
+  ---------------------------------------
+  [-view]                     Open a wave configuration file. This switch may
+                              be repeated to open multiple files.
+  [-autoloadwcfg]             For a WDB file named <name>.wdb, automatically 
+                              open all WCFG files named <name>#.wcfg.  
+                              Ignored if -view is present.
+  [-runall]                   Run simulation until completion, then quit 
+                              (does 'run -all; exit')
+  [-R]                        Run simulation until completion, then quit 
+                              (does 'run -all; exit')
+  [-maxdeltaid]               Specify the maximum delta number. Will report 
+                              error if it exceeds maximum simulation loops at
+                              the same time
+                              Default: 10000
+  [-nolog]                    Ignored (for compatibility with xsim 
+                              command-line tool)
+  [-maxlogsize]               Set the maximum size a log file can reach in 
+                              MB. The default setting is unlimited
+                              Default: -1
+  [-onfinish]                 Specify behavior at end of simulation: 
+                              quit|stop
+                              Default: stop
+  [-onerror]                  Specify behavior upon simulation run-time 
+                              error: quit|stop
+                              Default: stop
+  [-tclbatch]                 Specify the TCL file for batch mode execution
+  [-t]                        Specify the TCL file for batch mode execution
+  [-testplusarg]              Specify plusargs to be used by $test$plusargs 
+                              and $value$plusargs system functions
+  [-vcdfile]                  Specify the vcd output file
+  [-vcdunit]                  Specify the vcd output unit.  Default is the 
+                              same as the engine precision unit
+  [-wdb]                      Specify the waveform database output file
+  [-tp]                       Enable printing of hierarchical names of 
+                              process being executed
+  [-tl]                       Enable printing of file name and line number of
+                              statements being executed.
+  [-nosignalhandlers]         Run with no signal handlers to avoid conflict 
+                              with security software
+  [-ieeewarnings]             Enable warnings from VHDL IEEE functions
+  [-stats]                    Display memory and cpu stats upon exiting
+  [-scNoLogFile]              Keep the SystemC output separate from XSim 
+                              output
+  [-sv_seed]                  Seed for constraint random stimulus
+                              Default: 1
+  [-protoinst]                Specify a .protoinst file for protocol analysis
+  [-cov_db_dir]               System Verilog Coverage Run Directory. The 
+                              coverage data will be present under 
+                              <cov_db_dir>/xsim.covdb/<cov_db_name> 
+                              directory.Default is ./ or inherits value set 
+                              in similar xelab option.
+  [-cov_db_name]              System Verilog Coverage Run Name. The coverage 
+                              data will be present under 
+                              <cov_db_dir>/xsim.covdb/<cov_db_name> 
+                              directory.Default is snapshot name or inherits 
+                              value set in similar xelab option.
+  [-ignore_assertions]        Ignore System Verilog concurrent assertion 
+                              constructs at runtime.
+  [-ignore_coverage]          Ignore System Verilog Functional Coverage at 
+                              runtime.
+  [-downgrade_error2info]     Downgrade System verilog message severity from 
+                              error to info level.
+  [-downgrade_error2warning]  Downgrade System verilog message severity from 
+                              error to warning level.
+  [-downgrade_fatal2info]     Downgrade System verilog message severity from 
+                              fatal to info level.
+  [-downgrade_fatal2warning]  Downgrade System verilog message severity from 
+                              fatal to warning level.
+  [-ignore_feature]           Specify System Verilog feature to be ignored at
+                              runtime. Choices are: assertion : Ignore 
+                              concurrent assertions.
+  [-downgrade_severity]       Downgrade severity level of System Verilog HDL 
+                              messages.Choices are: error2warning|error2info|
+                              fatal2warning|fatal2info.
+  [-quiet]                    Ignore command errors
+  [-verbose]                  Suspend message limits during command execution
+  <snapshot>                  The name of design snapshot or WDB file
+
+Categories: 
+Simulation
+
+Description:
+
+  The xsim command loads a simulation snapshot to run a batch mode
+  simulation, or to provide a GUI and/or Tcl-based interactive simulation
+  environment. The snapshot must be generated using the xelab command.
+
+Arguments:
+
+  -view <arg> - (Optional) Open a wave configuration file to store the
+  waveform activity for the simulation. The Wave Config file contains just
+  the list of wave objects (signals, dividers, groups, virtual buses) to
+  display, and their display properties, plus markers. A wave configuration
+  file is written in the current simulation with the save_wave_config
+  command.
+
+  Note: This option may be repeated to open multiple Wave Config files.
+
+  -autoloadwcfg - (Optional) When loading a wave database (WDB) file named
+  <name>.wdb, automatically open all associated wave config files WCFG named
+  <name>#.wcfg. This option is ignored if -view is also specified.
+
+  -runall | -R - (Optional) Run the simulation until no event is left in the
+  event queue, a breakpoint or valid condition is encountered, or a run time
+  exception occurs. Then quit the simulator. This is the equivalent of `run
+  -all; exit`.
+
+  -maxdeltaid <arg> - (Optional) Specify the maximum number of delta cycles
+  as an integer greater than 0. The default value is 10000.The simulator will
+  report an error if it exceeds the specified maximum number of simulation
+  loops, or delta cycles, at simulation run time. Refer to the Vivado Design
+  Suite User Guide: Logic Simulation (UG900) for more information on delta
+  cycles.
+
+  -nolog - (Optional) This option is provided for compatibility with the
+  command line XSIM utility, and is ignored when running in Tcl in the Vivado
+  Design Suite.
+
+  -maxlogsize <arg> - (Optional) The maximum size for a simulation log file,
+  specified as a value in MBytes. The default value of -1, means the log file
+  has no size limit.
+
+  -onfinish [ stop | quit ] - (Optional) Specify the actions of the simulator
+  upon finishing the simulation run. Valid values are stop the simulation, or
+  quit the simulator. The default is stop.
+
+  -onerror [ stop | quit ] - (Optional} Specify the actions of the simulator
+  upon encountering an error. Valid values are stop the simulation, or quit
+  the simulator. The default is stop.
+
+  -tclbatch | -t - (Optional) Specify a Tcl script file to run the simulator
+  in batch mode.
+
+  -testplusarg <args> - (Optional) Specify plusargs to be used by
+  $test$plusargs and $value$plusargs system functions. These arguments are
+  visually distinguished from other simulator arguments by starting with the
+  plus (`+`) character.
+
+  -vcdfile <arg> - (Optional) Specify a Value Change Dump (VCD) file to
+  capture simulation output.
+
+  -vcdunit <arg> - (Optional) Specify the time unit for the VCD output. The
+  default unit is the same as the simulation engine precision.
+
+  -wdb <arg> - (Optional) Specify the simulation waveform database (WDB)
+  file. When the simulation completes, the simulation is written to a static
+  simulator database file. The file can be opened for later review by the
+  open_wave_database command.
+
+  -tp - (Optional) Print the hierarchical names of process being executed to
+  the standard output.
+
+  -tl - (Optional) Print the file name and line number of statements being
+  executed to the standard output.
+
+  -nosignalhandlers - (Optional) Disables the installation of OS-level signal
+  handlers in the simulation. With the signal handlers disabled, OS-level
+  fatal errors could crash the simulation abruptly with little indication of
+  the nature of the failure.
+
+  Note: Use this option only if your security software prevents the simulator
+  from running successfully.
+
+  -ieeewarnings - (Optional) Enable warnings generated by the use of VHDL
+  IEEE functions. Use this option to enable warnings that are disabled by
+  default since these warnings can generally be ignored.
+
+  -stats - (Optional) Display statistics related to memory and CPU usage upon
+  exiting the simulator.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <snapshot> - (Required) The name of the simulation snapshot to be executed,
+  or WDB file to be opened for viewing. The snapshot must have been
+  previously compiled by xelab. The WDB file must have been previously saved
+  using the -wdb option of the xsim command.
+
+Examples:
+
+  The following example launches xsim on the specified simulation snapshot:
+
+    xsim C:/Data/project_xsim/project_xsim.sim/sim_1/behav/testbench_behav 
+    
+
+See Also:
+
+   *  launch_simulation
+
+Vivado% xsim top 
+ERROR: [Simtcl 6-30] Unable to locate simulation image at 'xsim.dir/top/xsimk.exe'
+
+Vivado% xsim
+ERROR: [Common 17-163] Missing value for option 'snapshot', please type 'xsim -help' for usage info.
+
+Vivado% xsim work.tb
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+simulation_3
+Vivado% run 1000ns
+@00003000: $16 <= 00000003
+@00003004: $17 <= 00000001
+@00003008: $18 <= 00000004
+@0000300c: $16 <= 00000002
+@00003010: $17 <= 00000002
+@00003014: $18 <= 00000008
+@00003018: *00000008 <= 00000002
+@0000301c: $ 8 <= 00000002
+@0000300c: $16 <= 00000000
+@00003010: $17 <= 00000004
+@00003014: $18 <= 00000010
+@00003018: *00000010 <= 00000004
+@0000301c: $ 8 <= 00000004
+@0000300c: $16 <= fffffffc
+@00003010: $17 <= 00000008
+@00003014: $18 <= 00000020
+@00003018: *00000020 <= 00000008
+@0000301c: $ 8 <= 00000008
+Vivado% xsim work.tb -R
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+run -all
+@00003000: $16 <= 00000003
+@00003004: $17 <= 00000001
+@00003008: $18 <= 00000004
+@0000300c: $16 <= 00000002
+@00003010: $17 <= 00000002
+@00003014: $18 <= 00000008
+@00003018: *00000008 <= 00000002
+@0000301c: $ 8 <= 00000002
+@0000300c: $16 <= 00000000
+@00003010: $17 <= 00000004
+@00003014: $18 <= 00000010
+@00003018: *00000010 <= 00000004
+@0000301c: $ 8 <= 00000004
+@0000300c: $16 <= fffffffc
+@00003010: $17 <= 00000008
+@00003014: $18 <= 00000020
+@00003018: *00000020 <= 00000008
+@0000301c: $ 8 <= 00000008
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'run' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 20 16:51:58 2021...

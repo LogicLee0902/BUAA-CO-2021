@@ -1,0 +1,32 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../PipelineCPU_R.srcs/sources_1/new/A-T Controller.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/ADD4.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/ALU.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/CMP.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/Controller.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/DM.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/EXME.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/EXT.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/Forward Controller.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/GRF.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/IDEX.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/IFID.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/IM.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/MEWB.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/MUX.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/NPC.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/PC.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/StageD.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/StageE.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/StageF.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/StageM.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/Stall.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/mips.v" \
+"../../../../PipelineCPU_R.srcs/sources_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

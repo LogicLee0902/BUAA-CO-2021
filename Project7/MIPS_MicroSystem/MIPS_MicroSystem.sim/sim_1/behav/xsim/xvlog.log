@@ -1,0 +1,65 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/ADD4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/EXME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXME
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/EXT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/Forward Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forward_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/GRF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GRF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/LOAD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LOAD
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/MEWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2_32
+INFO: [VRFC 10-311] analyzing module MUX_4_5
+INFO: [VRFC 10-311] analyzing module MUX_4_32
+INFO: [VRFC 10-311] analyzing module MUX_8_32
+INFO: [VRFC 10-311] analyzing module MUX_6_32
+INFO: [VRFC 10-311] analyzing module MUX_7_32
+INFO: [VRFC 10-311] analyzing module MUX_10_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/MulDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULDIV
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/P7_standard_timer_2019.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/SAVE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SAVE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/StageD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StageD
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/StageE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StageE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/StageF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StageF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/StageM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StageM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/StageW.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StageW
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/Stall.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Stall_Judge
+INFO: [VRFC 10-311] analyzing module Stall_Sign
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/mips_Bridge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_Bridge
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/mips_CP0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_CP0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/mips_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/MIPS_MicroSystem/MIPS_MicroSystem.srcs/sources_1/new/tb_interrupt_demo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_txt

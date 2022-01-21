@@ -1,0 +1,461 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov 20 17:09:33 2021
+# Process ID: 3556
+# Current directory: D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new
+# Command line: vivado.exe -mode tcl
+# Log file: D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/vivado.log
+# Journal file: D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new\vivado.jou
+#-----------------------------------------------------------
+Vivado% open_project D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.xpr
+Scanning sources...
+Finished scanning sources
+Monocycle_CPU
+Vivado% update_compile_order -fileset sources_1
+Vivado% launch simulation
+ambiguous command name "launch": launch_chipscope_analyzer launch_impact launch_runs launch_sdk launch_simulation
+Vivado% launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/EXT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/GRF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GRF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2_32
+INFO: [VRFC 10-311] analyzing module MUX_4_5
+INFO: [VRFC 10-311] analyzing module MUX_4_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/dasm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DASM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sources_1/new/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.sim/sim_1/behav/xsim'
+"xelab -wto 621f38b3aa9d41e8871e65c93967b309 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xillinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 621f38b3aa9d41e8871e65c93967b309 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.GRF
+Compiling module xil_defaultlib.MUX_4_32
+Compiling module xil_defaultlib.MUX_4_5
+Compiling module xil_defaultlib.MUX_2_32
+Compiling module xil_defaultlib.EXT
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DM
+Compiling module xil_defaultlib.DASM
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 900ns
+@00003000: $ 2 <= a4e40000
+@00003004: $ 2 <= a4e4189e
+@00003008: $ 3 <= a4b30000
+@0000300c: $ 3 <= a4b3e056
+@00003010: $ 4 <= 2c320000
+@00003014: $ 4 <= 2c327505
+@00003018: $ 5 <= 1ce70000
+@0000301c: $ 5 <= 1ce77922
+@00003020: $ 6 <= 2be20000
+@00003024: $ 6 <= 2be2ff93
+@00003028: $ 7 <= ddc70000
+@0000302c: $ 7 <= ddc7eef1
+@00003030: $ 8 <= 0be40000
+@00003034: $ 8 <= 0be4662d
+@00003038: $ 9 <= 132e0000
+@0000303c: $ 9 <= 132ea027
+@00003040: $10 <= ca580000
+@00003044: $10 <= ca58acf9
+@00003048: $11 <= 2b4f0000
+@0000304c: $11 <= 2b4f7a85
+@00003050: $12 <= 14aa0000
+@00003054: $12 <= 14aaf81d
+@00003058: $13 <= 0bd10000
+@0000305c: $13 <= 0bd1a865
+@00003060: $14 <= 2b7a0000
+@00003064: $14 <= 2b7a8d3f
+@00003068: $15 <= 8ac30000
+@0000306c: $15 <= 8ac3eaf7
+@00003070: $16 <= 27e10000
+@00003074: $16 <= 27e16949
+@00003078: $17 <= 201d0000
+@0000307c: $17 <= 201db447
+@00003080: $18 <= 272c0000
+@00003084: $18 <= 272caa10
+@00003088: $19 <= 58400000
+@0000308c: $19 <= 584036d8
+@00003090: $20 <= 3d360000
+@00003094: $20 <= 3d36d47a
+@00003098: $21 <= eaff0000
+@0000309c: $21 <= eaffb6ec
+@000030a0: $22 <= 619f0000
+@000030a4: $22 <= 619ffa47
+@000030a8: $23 <= a5f50000
+@000030ac: $23 <= a5f581f2
+@000030b0: $24 <= 2a3f0000
+@000030b4: $24 <= 2a3f4b7f
+@000030b8: $25 <= 234e0000
+@000030bc: $25 <= 234e6b09
+@000030c0: $26 <= ed3b0000
+@000030c4: $26 <= ed3bf740
+@000030c8: $27 <= 996e0000
+@000030cc: $27 <= 996eab2f
+@000030d0: *00000000 <= 584036d8
+@000030d4: *00000004 <= ca58acf9
+@000030d8: *00000008 <= 00000000
+@000030dc: *0000000c <= 00000000
+@000030e0: *00000010 <= 14aaf81d
+@000030e4: *00000014 <= 584036d8
+@000030e8: *00000018 <= 00000000
+@000030ec: *0000001c <= a4e4189e
+@000030f0: *00000020 <= 2be2ff93
+@000030f4: *00000024 <= 132ea027
+@000030f8: *00000028 <= 1ce77922
+@000030fc: *0000002c <= 584036d8
+@00003100: *00000030 <= 8ac3eaf7
+@00003104: *00000034 <= 0bd1a865
+@00003108: *00000038 <= 8ac3eaf7
+@0000310c: *0000003c <= 201db447
+@00003110: *00000040 <= 619ffa47
+@00003114: *00000044 <= 996eab2f
+@00003118: *00000048 <= 0bd1a865
+@0000311c: *0000004c <= 619ffa47
+@00003120: *00000050 <= eaffb6ec
+@00003124: *00000054 <= 584036d8
+@00003128: *00000058 <= 2b7a8d3f
+@0000312c: *0000005c <= a5f581f2
+@00003130: *00000060 <= 3d36d47a
+@00003134: *00000064 <= 584036d8
+@00003138: *00000068 <= a4e4189e
+@0000313c: *0000006c <= 27e16949
+@00003140: *00000070 <= 234e6b09
+@00003144: *00000074 <= 27e16949
+@00003148: *00000078 <= eaffb6ec
+@0000314c: *0000007c <= 2be2ff93
+@00003150: *00000080 <= 2a3f4b7f
+@00003154: *00000084 <= a4b3e056
+@00003158: *00000088 <= 2be2ff93
+@0000315c: *0000008c <= 2b7a8d3f
+@00003160: *00000090 <= a4e4189e
+@00003164: *00000094 <= 2b4f7a85
+@00003168: *00000098 <= 00000000
+@0000316c: *0000009c <= 0be4662d
+@00003170: *000000a0 <= 132ea027
+@00003174: *000000a4 <= 3d36d47a
+@00003178: *000000a8 <= ca58acf9
+@0000317c: *000000ac <= 00000000
+@00003180: *000000b0 <= 2b7a8d3f
+@00003184: *000000b4 <= 3d36d47a
+@00003188: *000000b8 <= 00000000
+@0000318c: *000000bc <= eaffb6ec
+@00003190: *000000c0 <= 3d36d47a
+@00003194: *000000c4 <= 2c327505
+@00003198: *000000c8 <= 2b4f7a85
+@0000319c: *000000cc <= 584036d8
+@000031a0: *000000d0 <= 584036d8
+@000031a4: *000000d4 <= 2a3f4b7f
+@000031a8: *000000d8 <= 1ce77922
+@000031ac: *000000dc <= ca58acf9
+@000031b0: *000000e0 <= 2be2ff93
+@000031b4: *000000e4 <= 2b4f7a85
+@000031b8: *000000e8 <= 996eab2f
+@000031bc: *000000ec <= ed3bf740
+@000031c0: *000000f0 <= ddc7eef1
+@000031c4: *000000f4 <= 2a3f4b7f
+@000031c8: *000000f8 <= 0bd1a865
+@000031cc: *000000fc <= 201db447
+@000031d0: *00000100 <= 272caa10
+@000031d4: *00000104 <= 3d36d47a
+@000031d8: *00000108 <= eaffb6ec
+@000031dc: *0000010c <= 14aaf81d
+@000031e0: *00000110 <= 3d36d47a
+@000031e4: *00000114 <= 234e6b09
+@000031e8: *00000118 <= a4b3e056
+@000031ec: *0000011c <= 3d36d47a
+@000031f0: *00000120 <= 2b4f7a85
+@000031f4: *00000124 <= 2a3f4b7f
+@000031f8: *00000128 <= a4e4189e
+@000031fc: *0000012c <= ddc7eef1
+@00003200: *00000130 <= 0bd1a865
+@00003204: *00000134 <= 201db447
+@00003208: *00000138 <= 272caa10
+@0000320c: *0000013c <= ca58acf9
+@00003210: *00000140 <= 2c327505
+@00003214: *00000144 <= a4b3e056
+@00003218: *00000148 <= 00000000
+@0000321c: *0000014c <= ddc7eef1
+@00003220: *00000150 <= 619ffa47
+@00003224: *00000154 <= 132ea027
+@00003228: *00000158 <= 201db447
+@0000322c: *0000015c <= 2b7a8d3f
+@00003230: *00000160 <= 3d36d47a
+@00003234: *00000164 <= 2b7a8d3f
+@00003238: *00000168 <= 234e6b09
+@0000323c: *0000016c <= ca58acf9
+@00003240: *00000170 <= 00000000
+@00003244: *00000174 <= 2be2ff93
+@00003248: *00000178 <= 0bd1a865
+@0000324c: *0000017c <= 0bd1a865
+@00003250: *00000180 <= 0bd1a865
+@00003254: *00000184 <= a5f581f2
+@00003258: *00000188 <= a5f581f2
+@0000325c: *0000018c <= 2c327505
+@00003260: *00000190 <= 132ea027
+@00003264: $31 <= 00003f00
+@00003268: $29 <= 00002f00
+@0000326c: $ 2 <= 000000c4
+@00003270: $ 5 <= ca58acf9
+@00003274: $23 <= d2020000
+@00003278: $ 7 <= 8ac3eef7
+@0000327c: $15 <= 42110000
+@00003280: $16 <= 0000005c
+@00003284: *00000058 <= 000000c4
+@00003288: $19 <= b1e44bb9
+@0000328c: $ 5 <= 00000038
+@00003290: $ 5 <= 132ea027
+@00003294: $ 0 <= 00000000
+@00003298: $14 <= 00000160
+@0000329c: $11 <= 201db447
+@000032a0: $ 0 <= 00000000
+@000032a4: $22 <= cf8e0000
+@000032a8: $ 4 <= 2a3f6b7f
+@000032ac: $23 <= 132eae7f
+@000032b0: $ 0 <= 00000000
+@000032b4: $ 2 <= 00000004
+@000032b8: $29 <= 00002efc
+@000032bc: *00002f00 <= 00003f00
+@000032c0: $31 <= 000032c4
+@000035ac: $20 <= cf8e0c73
+@000035b0: $15 <= 000000a0
+@000035b4: *00000090 <= 0000005c
+@000035b8: $24 <= 000028be
+@000032c4: $ 2 <= 00000004
+@000032c8: $31 <= 00003f00
+@000032cc: $29 <= 00002f00
+@000032d0: $12 <= ab090000
+@000032d4: $12 <= 2ada1faa
+@000032d8: $ 0 <= 00000000
+@000032dc: $18 <= a45c0000
+@000032e0: $23 <= 00000168
+@000032e4: $25 <= 2b7a8d3f
+@000032e8: $ 5 <= 2b7adf3f
+@000032ec: $15 <= 00000144
+@000032f0: $19 <= 272caa10
+@000032f4: $ 0 <= 00000000
+@000032f8: $ 2 <= c2520000
+@000032fc: $18 <= 0be4673f
+@00003300: $ 0 <= 00000000
+@00003304: $ 9 <= ed3bf7ce
+@00003308: $ 0 <= 00000000
+@0000330c: $24 <= 0000011c
+@00003310: *00000118 <= 2a3f6b7f
+@00003314: $21 <= 6e6d0000
+@00003318: $ 2 <= 00000074
+@0000331c: *0000005c <= 00000168
+@00003320: $16 <= 272cab9b
+@00003324: $ 2 <= 00000004
+@00003328: $29 <= 00002efc
+@0000332c: *00002f00 <= 00003f00
+@00003330: $31 <= 00003334
+@000035c0: $23 <= 17b60e92
+@000035c4: $ 4 <= 331112da
+@000035c8: $ 0 <= 00000000
+@000035cc: $ 7 <= 86c6ace9
+@000035d0: $23 <= 00000004
+@000035d4: *00000010 <= ca58acf9
+@000035d8: $ 7 <= 0d59ab87
+@000035dc: $12 <= 0be47fbf
+@000035e0: $ 0 <= 00000000
+@000035e4: $ 2 <= 3e3e95ff
+@000035e8: $ 6 <= 5e8e0000
+@000035ec: $21 <= 44d00000
+@000035f0: $14 <= 00000134
+@000035f4: $ 6 <= 0bd1a865
+@000035f8: $18 <= 0be47fff
+@000035fc: $17 <= 0b5d2af8
+@00003600: $17 <= cf8e0cff
+@00003604: $ 5 <= 0bd1a721
+@00003608: $24 <= 0000f2a4
+@0000360c: $14 <= 00000068
+@00003610: $18 <= 584036d8
+@00003334: $ 2 <= 00000004
+@00003338: $31 <= 00003f00
+@0000333c: $29 <= 00002f00
+@00003340: $ 8 <= 000000c8
+@00003344: $21 <= 3d36d47a
+@00003348: $ 0 <= 00000000
+@0000334c: $ 7 <= 00090000
+@00003350: $ 3 <= 0000f36c
+@00003354: $ 4 <= 164f0000
+@00003358: $18 <= 00000048
+@0000335c: $ 3 <= a4e4189e
+@00003360: $ 3 <= f0b00000
+@00003364: $ 0 <= 3071f445
+@00003368: $12 <= cf8e8e77
+@0000336c: $ 2 <= 00000004
+@00003370: $29 <= 00002efc
+@00003374: *00002f00 <= 00003f00
+@00003378: $31 <= 0000337c
+@00003618: $20 <= 00000168
+@0000361c: *00000140 <= cf8e8e77
+@00003620: $13 <= 00000074
+@00003624: *00000048 <= 00090000
+@00003628: $24 <= 92640000
+@0000362c: $18 <= 2b838d3f
+@00003630: $ 4 <= 00000168
+@00003634: $11 <= 2b7a8d3f
+@00003638: $20 <= 00090144
+@0000363c: $21 <= 00000070
+@00003640: $16 <= 619ffa47
+@00003644: $25 <= cf8dff98
+@00003648: $ 0 <= 00000000
+@0000364c: $27 <= 00000000
+@00003650: *00000020 <= 00000004
+@00003654: $25 <= 00000118
+@00003658: $16 <= ddc7eef1
+@0000365c: $ 0 <= 00000000
+@00003660: $23 <= 9264f436
+@00003664: $19 <= 7f680000
+@00003668: $ 3 <= 00000108
+@0000366c: *000000e8 <= cf8e8e77
+@00003670: $10 <= 00000020
+@00003674: $ 0 <= 0bd1a865
+@0000337c: $ 2 <= 00000004
+@00003380: $31 <= 00003f00
+@00003384: $29 <= 00002f00
+@00003388: $18 <= 000000c4
+@0000338c: $15 <= 00000000
+@00003390: $10 <= cf8e8e77
+@00003394: $ 0 <= 00000000
+@00003398: $23 <= 0000013c
+@0000339c: $ 7 <= 2b4f7a85
+@000033a0: $ 3 <= 00000170
+@000033a4: $ 4 <= 00000000
+@000033a8: *00000014 <= 0bd1a721
+@000033ac: $16 <= 7f68a93c
+@000033b0: $11 <= 00000188
+@000033b4: $27 <= 0bd1a865
+@000033b8: $27 <= 0bd1fdef
+@000033bc: $ 2 <= 00000100
+@000033c0: *000000e0 <= 0000013c
+@000033c4: $20 <= 00000120
+@000033c8: $11 <= 272caa10
+@00003424: $ 0 <= 00000000
+@00003428: $ 9 <= 0000011c
+@0000342c: $ 0 <= 3d36d47a
+@00003430: $21 <= 74110000
+@00003434: $ 0 <= 00000000
+@00003438: $ 8 <= cf8e8eff
+@0000343c: $ 7 <= 00000140
+@00003440: $19 <= 234e6b09
+@00003444: $13 <= 54780000
+@00003448: $12 <= cd0a0000
+@0000344c: $13 <= a861e467
+@00003450: $ 0 <= 00000000
+@00003454: $ 9 <= 0000014c
+@00003458: $ 6 <= a4b3e056
+@0000345c: $20 <= 00000118
+@00003460: $ 3 <= 0bd1a865
+@00003464: $21 <= 57430000
+@00003468: $19 <= a8bd0118
+@0000346c: $14 <= 00000024
+@00003470: $18 <= 00090000
+@00003474: $17 <= 0bdaa865
+@00003478: $27 <= 00009ce6
+@0000347c: $ 3 <= 00000188
+@00003480: $17 <= 234e6b09
+@00003484: $13 <= ed3bff6d
+@00003488: $14 <= c6460000
+@000034bc: $14 <= 00000128
+@000034c0: $15 <= eaffb6ec
+@000034c4: $ 7 <= 00000180
+@000034c8: $21 <= 201db447
+@000034cc: $ 7 <= 00007bfc
+@000034d0: $18 <= eafffffd
+@000034d4: $ 5 <= 00000170
+@000034d8: *00000150 <= 0000013c
+@000034dc: $ 7 <= 272cfbdf
+@000034e0: $ 4 <= 579e6ce0
+@000034e4: $13 <= 579e6ce0
+@000034e8: $26 <= 8fed0000
+@000034ec: $ 0 <= 00000000
+@000034f0: $25 <= cf8e7591
+@000034f4: $21 <= a4b3e16e
+@000034f8: $21 <= d9790000
+@000034fc: $ 6 <= 00005a9e
+@0000354c: $ 0 <= 00000000
+@00003550: $21 <= 00000120
+@00003554: $22 <= 272caa10
+@00003558: $16 <= 18d00118
+@0000355c: $ 7 <= 272cfcf7
+@00003560: $18 <= cf8e8ddf
+@00003564: $ 6 <= 234e6c91
+@00003568: $ 8 <= 272cfe43
+@0000356c: $ 0 <= 00000000
+@00003570: $ 0 <= 00000000
+@00003574: $ 8 <= 579dcffa
+@00003578: $ 0 <= 00000000
+@0000357c: $25 <= 00000088
+@00003580: $19 <= 272cefb5
+@00003584: $26 <= 3fdb0000
+@00003588: $ 8 <= cf8edf7f
+@0000358c: $ 9 <= 00000010
+@00003590: *0000002c <= 00000120
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 900ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 389.602 ; gain = 10.258
+Vivado% 

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec  8 16:39:41 2021
+# Process ID: 31424
+# Current directory: D:/Archive/P5tester
+# Command line: vivado.exe -mode batch -source start.tcl
+# Log file: D:/Archive/P5tester/vivado.log
+# Journal file: D:/Archive/P5tester\vivado.jou
+#-----------------------------------------------------------
+source start.tcl
+source tb.tcl

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Dec  2 10:59:10 2021
+# Process ID: 41376
+# Current directory: D:/Archive/Auto-Test/pipelineCPU10/vivado
+# Command line: vivado.exe -mode batch -source start.tcl
+# Log file: D:/Archive/Auto-Test/pipelineCPU10/vivado/vivado.log
+# Journal file: D:/Archive/Auto-Test/pipelineCPU10/vivado\vivado.jou
+#-----------------------------------------------------------
+source start.tcl
+# open_project D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.xpr
+Scanning sources...
+Finished scanning sources
+# update_compile_order -fileset sources_1
+# launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.sim/sim_1/behav/xsim/simulate.log"
+    while executing
+"launch_simulation"
+    (file "start.tcl" line 3)
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  2 10:59:16 2021...

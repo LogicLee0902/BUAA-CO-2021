@@ -1,0 +1,18 @@
+verilog xil_defaultlib  \
+srcs/srcs/ALU.v \
+"srcs/Controller.v" \
+"srcs/DM.v" \
+"srcs/EXT.v" \
+"srcs/GRF.v" \
+"srcs/IM.v" \
+"srcs/MUX.v" \
+"srcs/NPC.v" \
+"srcs/PC.v" \
+"srcs/dasm.v" \
+"srcs/datapath.v" \
+"srcs/mips.v" \
+"srcs/tb.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

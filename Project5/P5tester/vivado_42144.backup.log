@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec  8 16:39:05 2021
+# Process ID: 42144
+# Current directory: D:/Archive/P5tester
+# Command line: vivado.exe -mode batch -source start.tcl
+# Log file: D:/Archive/P5tester/vivado.log
+# Journal file: D:/Archive/P5tester\vivado.jou
+#-----------------------------------------------------------
+source start.tcl
+# open_project D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.xpr
+Scanning sources...
+Finished scanning sources
+# update_compile_order -fileset sources_1
+# launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.sim/sim_1/behav/xsim'
+"xelab -wto 69eaea31912f48ec9422b319bd03e1d6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xillinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 69eaea31912f48ec9422b319bd03e1d6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb.tcl
+## current_wave_config
+                  11@00003000: $10 <= 0000000f
+                  11@00003004: *00000000 <= 0000000f
+                  15@00003008: $ 9 <= 0000000f
+                  25@00003018: $ 8 <= 00000011
+                  27@0000301c: $13 <= 00000013
+                  27@00003020: *00000000 <= 00000013
+                  31@00003024: $14 <= 00000013
+                  41@00003034: $ 8 <= 00000012
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 390.156 ; gain = 12.027
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  8 16:39:20 2021...

@@ -1,0 +1,123 @@
+{
+    "forwarding": [
+        {
+            "valid": true,
+            "forward": {
+                "reg": 8,
+                "old": {
+                    "stage": "d",
+                    "value": "0x00000000"
+                },
+                "new": {
+                    "stage": "m",
+                    "value": "0x00003010"
+                }
+            },
+            "view": {
+                "d": {
+                    "pc": "0x00003004",
+                    "instr": "jr $8"
+                },
+                "e": {
+                    "pc": "0x00000000",
+                    "instr": "nop"
+                },
+                "m": {
+                    "pc": "0x00003000",
+                    "instr": "ori $8, $0, 0x3010"
+                },
+                "w": {
+                    "pc": "0x00000000",
+                    "instr": "nop"
+                }
+            }
+        },
+        {
+            "valid": true,
+            "forward": {
+                "reg": 8,
+                "old": {
+                    "stage": "d",
+                    "value": "0x00000002"
+                },
+                "new": {
+                    "stage": "m",
+                    "value": "0x00003028"
+                }
+            },
+            "view": {
+                "d": {
+                    "pc": "0x0000301c",
+                    "instr": "jr $8"
+                },
+                "e": {
+                    "pc": "0x00003018",
+                    "instr": "sll $0, $0, 0"
+                },
+                "m": {
+                    "pc": "0x00003014",
+                    "instr": "ori $8, $0, 0x3028"
+                },
+                "w": {
+                    "pc": "0x00003010",
+                    "instr": "ori $8, $0, 0x0002"
+                }
+            }
+        },
+        {
+            "valid": true,
+            "forward": {
+                "reg": 8,
+                "old": {
+                    "stage": "d",
+                    "value": "0x00000003"
+                },
+                "new": {
+                    "stage": "w",
+                    "value": "0x00003044"
+                }
+            },
+            "view": {
+                "d": {
+                    "pc": "0x00003038",
+                    "instr": "jr $8"
+                },
+                "e": {
+                    "pc": "0x00003034",
+                    "instr": "sll $0, $0, 0"
+                },
+                "m": {
+                    "pc": "0x00003030",
+                    "instr": "sll $0, $0, 0"
+                },
+                "w": {
+                    "pc": "0x0000302c",
+                    "instr": "ori $8, $0, 0x3044"
+                }
+            }
+        }
+    ],
+    "stalling": [
+        {
+            "cause": "e",
+            "view": {
+                "d": {
+                    "pc": "0x00003004",
+                    "instr": "jr $8"
+                },
+                "e": {
+                    "pc": "0x00003000",
+                    "instr": "ori $8, $0, 0x3010"
+                },
+                "m": {
+                    "pc": "0x00000000",
+                    "instr": "nop"
+                },
+                "w": {
+                    "pc": "0x00000000",
+                    "instr": "nop"
+                }
+            }
+        }
+    ]
+}

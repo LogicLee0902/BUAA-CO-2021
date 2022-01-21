@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/EXME.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/IDEX.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/MEWB.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/decoder.v" \
+"../../../../MIPS_MicroSystem.srcs/sources_1/new/A-T Controller.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

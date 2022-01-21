@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov 20 16:17:18 2021
+# Process ID: 31720
+# Current directory: D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.sim/sim_1/behav/xsim/xsim
+# Command line: vivado.exe -mode tcl
+# Log file: D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.sim/sim_1/behav/xsim/xsim/vivado.log
+# Journal file: D:/Archive/ISE/Monocycle_CPU/Monocycle_CPU.sim/sim_1/behav/xsim/xsim\vivado.jou
+#-----------------------------------------------------------
+Vivado% ./tb.sh
+WARNING: [Common 17-259] Unknown Tcl command './tb.sh' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+couldn't execute ".\tb.sh": no such file or directory
+Vivado% tb.sh
+WARNING: [Common 17-259] Unknown Tcl command 'tb.sh' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+couldn't execute ".\tb.sh": no such file or directory
+Vivado% cd D:\Archive\ISE\Monocycle_CPU\Monocycle_CPU.sim\sim_1\behav\xsim\xsim>
+couldn't change working directory to "D:ArchiveISEMonocycle_CPUMonocycle_CPU.simsim_1ehavxsimxsim>": no such file or directory
+Vivado% help
+WARNING: [Common 17-20] Did not find any categories for task 'platform_verify'
+Topic Categories:
+Bitgen
+Board
+CDC
+Configuration
+DRC
+Debug
+Device
+Feasibility
+FileIO
+Floorplan
+GUIControl
+IPFlow
+IPIntegrator
+Memory
+Memory Initialization
+Methodology
+Netlist
+Object
+Partition
+PinPlanning
+Power
+Project
+PropertyAndParameter
+Report
+SDAccel
+SDC
+SDSoC
+Simulation
+SysGen
+Tcl
+TclBuiltIn
+TclPackage
+Timing
+ToolLaunch
+Tools
+Waiver
+XDC
+XPS
+projutils
+simulation
+synthesis
+user-written
+xilinxtclstore
+To list help topics by category, type 'help -category <category>'. For example:
+% help -category Project
+
+Vivado% Simulation 
+invalid command name "Simulation"
+Vivado% Simulation %help
+invalid command name "Simulation"
+Vivado% xvlog -help
+WARNING: [Common 17-259] Unknown Tcl command 'xvlog -help' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Vivado% 

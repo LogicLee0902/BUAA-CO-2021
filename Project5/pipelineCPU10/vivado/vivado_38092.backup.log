@@ -1,0 +1,139 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Dec  2 10:59:34 2021
+# Process ID: 38092
+# Current directory: D:/Archive/Auto-Test/pipelineCPU10/vivado
+# Command line: vivado.exe -mode batch -source start.tcl
+# Log file: D:/Archive/Auto-Test/pipelineCPU10/vivado/vivado.log
+# Journal file: D:/Archive/Auto-Test/pipelineCPU10/vivado\vivado.jou
+#-----------------------------------------------------------
+source start.tcl
+# open_project D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.xpr
+Scanning sources...
+Finished scanning sources
+# update_compile_order -fileset sources_1
+# launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/A-T Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/ADD4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/CMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/EXME.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXME
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/EXT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/Forward Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forward_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/GRF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GRF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/IM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/MEWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2_32
+INFO: [VRFC 10-311] analyzing module MUX_4_5
+INFO: [VRFC 10-311] analyzing module MUX_4_32
+INFO: [VRFC 10-311] analyzing module MUX_8_32
+INFO: [VRFC 10-311] analyzing module MUX_6_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/StageD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StageD
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/StageE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StageE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/StageF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StageF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/StageM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StageM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/Stall.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Stall_Judge
+INFO: [VRFC 10-311] analyzing module Stall_Sign
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/mips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.srcs/sources_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.sim/sim_1/behav/xsim'
+"xelab -wto 69eaea31912f48ec9422b319bd03e1d6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xillinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 69eaea31912f48ec9422b319bd03e1d6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX_4_32
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.ADD4
+Compiling module xil_defaultlib.IM
+Compiling module xil_defaultlib.StageF
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.GRF
+Compiling module xil_defaultlib.EXT
+Compiling module xil_defaultlib.MUX_8_32
+Compiling module xil_defaultlib.CMP
+Compiling module xil_defaultlib.StageD
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.MUX_6_32
+Compiling module xil_defaultlib.MUX_2_32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.StageE
+Compiling module xil_defaultlib.EXME
+Compiling module xil_defaultlib.DM
+Compiling module xil_defaultlib.StageM
+Compiling module xil_defaultlib.MEWB
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.AT
+Compiling module xil_defaultlib.Forward_Unit
+Compiling module xil_defaultlib.Stall_Judge
+Compiling module xil_defaultlib.Stall_Sign
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Archive/ISE/PipelineCPU_R/PipelineCPU_R.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb.tcl
+## current_wave_config
+                  11@00003000: $17 <= 00000002
+                  13@00003004: $17 <= 00000004
+                  13@00003008: *00000008 <= 00000004
+                  17@0000300c: $17 <= 00000004
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 388.285 ; gain = 10.152
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  2 10:59:49 2021...
