@@ -66,8 +66,9 @@ R型跳转指令将 rs 写入 PC 寄存器，可以在 ID 级就修改 PC 寄存
     
     需求者供给者
     
-    ![](http://latex.codecogs.com/gif.latex?\ T_{new} $ T_{max})
-    
+   ![math](https://latex.codecogs.com/svg.image?T_{max}&space;\&&space;T_{use})
+
+
     标记转发法
     
 
